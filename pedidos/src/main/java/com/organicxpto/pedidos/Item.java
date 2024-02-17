@@ -1,12 +1,20 @@
 package com.organicxpto.pedidos;
 
+import jakarta.persistence.*;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+
 import java.math.BigDecimal;
 
+
+@Entity
 public class Item {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Long idProduct;
-
     private BigDecimal quantidade;
 
     public Item() {

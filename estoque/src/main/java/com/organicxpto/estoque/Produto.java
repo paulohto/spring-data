@@ -1,9 +1,14 @@
 package com.organicxpto.estoque;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.MongoId;
+
 import java.math.BigDecimal;
 
+@Document
 public class Produto {
 
+    @MongoId
     private Long id;
 
     private String nome;

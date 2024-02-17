@@ -1,12 +1,18 @@
 package com.organicxpto.pedidos;
 
+import jakarta.persistence.*;
+//import org.springframework.data.annotation.Id;
+
 import java.util.List;
 import java.util.UUID;
 
+@Entity
 public class Pedido {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO )
     private UUID id;
     private UUID idCliente;
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Item>  itens;
 
     public Pedido() {

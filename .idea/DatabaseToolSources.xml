@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="estoque-localhost" uuid="0b922d93-4ad8-4542-a2a8-6079621b226f" type="MONGO">
+      <base-info connect-type="DB_DEFAULT" product="Mongo DB" version="7.0.4" jdbc-name="MongoDB JDBC Driver" jdbc-version="1.18" />
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="admin" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <url>mongodb://localhost:27017/admin</url>
+      <remarks />
+      <vm-options />
+      <driver-info id="mongoDB" />
+      <ssh-properties enabled="false" />
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+    <data-source name="pedidos-localhost" uuid="73107f19-bea5-417e-a4e0-c95448f4a399" type="POSTGRES">
+      <base-info connect-type="DB_DEFAULT" product="PostgreSQL" version="15.4 (Debian 15.4-1.pgdg120+1)" jdbc-name="PostgreSQL JDBC Driver" jdbc-version="42.6.0" />
+      <user-name>myuser</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="postgres" operator="@">
+              <node kind="schema">
+                <name qname="public" />
+              </node>
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <url>jdbc:postgresql://localhost:5432/mydatabase</url>
+      <remarks />
+      <vm-options />
+      <driver-info id="postgresql" />
+      <ssh-properties enabled="false" />
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>
